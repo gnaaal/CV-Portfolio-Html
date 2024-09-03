@@ -1,8 +1,8 @@
 var typed = new Typed(".text", {
     strings: ["Fresh Graduate", "Web Developer"],
-    typeSpeed: 100,
-    backSpeed:100,
-    backDelay: 1000,
+    typeSpeed: 100, // buat kecepatan pengetikan karakter
+    backSpeed:100,  //buat atur speed karakternya ilang
+    backDelay: 1000, // delay antar karakter
     loop: true
 })
 
@@ -10,7 +10,7 @@ var typed = new Typed(".text", {
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
+window.onscroll = () => { //function buat scroll dll
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
